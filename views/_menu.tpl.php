@@ -1,7 +1,3 @@
-<head>
-    <link rel="stylesheet" href="css/style.css"/>
-</head>
-
 <a href="index.php?action=zeige_buecher">start</a>
 <a href="index.php?action=zeige_buch&id=0">buch 1</a>
 <a href="index.php?action=zeige_buch&id=1">buch 2</a>
