@@ -14,6 +14,3 @@ if (isset($_POST['titel']) && isset($_POST['preis'])) {
     Preis: <input type="text" name="preis"/>
     <input type="submit" value="speichern"/>
   </form>
-</body>
-
-</html>
