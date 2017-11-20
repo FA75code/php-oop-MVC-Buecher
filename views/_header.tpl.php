@@ -3,6 +3,6 @@
 
 <head>
   <meta charset="utf-8" />
-  <title><?php echo $header ?></title>
+  <title><?php if(isset($header)) {echo $header;} ?></title>
   <link rel="stylesheet" href="css/style.css"/>
 </head>
