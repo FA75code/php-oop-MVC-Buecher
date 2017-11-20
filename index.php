@@ -3,6 +3,8 @@
 require_once 'models/Buch.php';
 require_once 'include/emulator.inc.php';
 
+require_once 'views/_menu.tpl.php';
+
 if (isset($_GET['message'])) {
   echo $_GET['message'];
 }
@@ -35,9 +37,3 @@ switch($action) {
 require_once 'views/' . $view . '.tpl.php';
 
 ?>
-
-
-<a href="index.php?action=zeige_buecher">start</a>
-<a href="index.php?action=zeige_buch&id=0">buch 1</a>
-<a href="index.php?action=zeige_buch&id=1">buch 2</a>
-<a href="index.php?action=speichere_buch">neues buch</a>
