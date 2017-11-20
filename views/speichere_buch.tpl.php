@@ -8,14 +8,6 @@ if (isset($_POST['titel']) && isset($_POST['preis'])) {
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8" />
-  <title>Ein klasse Buch</title>
-</head>
-
 <body>
   <h1>Neues Buch anlegen</h1>
   <form method="post" action="">
