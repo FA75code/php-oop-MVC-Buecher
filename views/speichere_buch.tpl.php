@@ -9,7 +9,6 @@ if (isset($_POST['titel']) && isset($_POST['preis'])) {
 ?>
 
 <body>
-  <h1>Neues Buch anlegen</h1>
   <form method="post" action="">
     Titel: <input type="text" name="titel"/>
     Preis: <input type="text" name="preis"/>
