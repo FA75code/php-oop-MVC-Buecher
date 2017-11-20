@@ -3,6 +3,9 @@
 require_once 'models/Buch.php';
 require_once 'include/emulator.inc.php';
 
+if (isset($_GET['message'])) {
+  echo $_GET['message'];
+}
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : null;
 $view = $action;
 

@@ -3,6 +3,8 @@ require_once 'include/functions.inc.php';
 
 if (isset($_POST['titel']) && isset($_POST['preis'])) {
     speichere_buch($_POST);
+    $message = 'Vielen Dank!';
+    header("Location: index.php?message=$message");
 }
 ?>
 
