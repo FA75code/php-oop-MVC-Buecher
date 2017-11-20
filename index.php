@@ -36,4 +36,6 @@ switch($action) {
 
 require_once 'views/' . $view . '.tpl.php';
 
+require_once 'views/_footer.tpl.php';
+
 ?>
