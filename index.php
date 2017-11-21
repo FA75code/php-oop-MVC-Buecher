@@ -3,9 +3,6 @@
 require_once 'models/Buch.php';
 require_once 'include/emulator.inc.php';
 
-if (isset($_GET['message'])) {
-  echo $_GET['message'];
-}
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : null;
 $view = $action;
 
@@ -20,6 +17,10 @@ switch($action) {
     // $buecher = hole_buecher();
     $view = 'speichere_buch';
     $header = 'Neues Buch';
+    break;
+  case 'editiere_buch':
+    $view = 'editiere_buch';
+    $header = 'Editiere Buch';
     break;
   case 'zeige_buch':
     if ($_GET['id']) {
@@ -37,6 +38,14 @@ switch($action) {
 }
 require_once 'views/_header.tpl.php';
 require_once 'views/_menu.tpl.php';
+
+if (isset($_GET['message'])) {
+  require 'views/_linien.tpl.php';
+  echo $_GET['message'];
+  require 'views/_linien.tpl.php';
+}
+
+
 
 require_once 'views/' . $view . '.tpl.php';
 
